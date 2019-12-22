@@ -4,19 +4,11 @@
 
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import * as PropTypes from 'prop-types'
-
-interface Props { 
-  name: string
-}
-
-const Hello = (props: Props): JSX.Element => {
-return <div>Hello {props.name}</div>
-}
+import App  from '../routes/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="pepito" />,
+    <App/>,
     document.body.appendChild(document.createElement('div')),
   )
 })
